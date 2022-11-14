@@ -48,6 +48,7 @@ dependencies {
     val daggerVersion ="2.35.1"
     val coroutinesVersion = "1.3.9"
     val roomVersion = "2.4.3"
+    val nav_version = "2.5.3"
 
     implementation("androidx.core:core-ktx:$coreKtxVersion")
     implementation("androidx.appcompat:appcompat:$appcompatVersion")
@@ -66,6 +67,10 @@ dependencies {
     implementation("androidx.room:room-runtime:$roomVersion")
     implementation("androidx.room:room-ktx:$roomVersion")
     kapt("androidx.room:room-compiler:$roomVersion")
+
+    //navigation
+    implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
+    implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
 
     testImplementation("junit:junit:$jUnitVersion")
     androidTestImplementation("androidx.test.ext:junit:$extJUnitVersion")
